@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Test task</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normilize.css">
+	<link rel="stylesheet" href="css/components.css">
+
+</head>
+
+<body>
+	<header>
+
+		<div class="form__search">
+			<div class="btn__main">
+				<form id="search-form" class="btn__main-search">
+					<input id="search-input" class="search" type="text" name="search-input"
+						placeholder="Начните вводить текст для поиска (не менее трех символов)">
+
+					<button type="submit" class="btn">
+						<img class="lens" src="img/lens.png"></img>
+					</button>
+				</form>
+			</div>
+
+		</div>
+	</header>
+	<div class="catalog">
+		<div class="search-results" id="search-results"></div>
+		<div id="pagination"></div>
+
+		<template id="result-template">
+			<div class="search-result">
+				<h2 class="title"></h2>
+				<div class="details-panel hidden">
+
+					<div class="author">
+					</div>
+					<p class="stars"></p>
+					<p class="watchers"></p>
+					<p class="description"></p>
+					<p class="language"></p>
+					<p class="updated"></p>
+					<p class="forks"></p>
+				</div>
+			</div>
+		</template>
+
+	</div>
+
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>

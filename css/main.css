@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+@font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-regular.woff2);
+}
+
+body {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	background: #E5E5E5;
+}
+.form__search{
+width: 100%;
+height: 147px;
+left: 0px;
+top: 0px;
+background: #DDDDDD;
+}
+.search{
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+background: #FFFFFF;
+border: 1px solid #A2A3A4;
+
+}
+
+.btn__main-search{
+    width: 90%;
+    height: 100%;
+}
+input::placeholder{
+padding: 5%;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+.btn{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 74px;
+	height: 68px;
+	border-radius: 15px;
+	background: #00A3FF;
+	border: 1px solid #A2A3A4;
+	position: absolute;
+bottom: 0px;
+border: none; /* Удаление границы кнопки */
+padding: 8px 16px; /* Отступы внутри кнопки */
+cursor: pointer;
+transition: background-color 0.3s ease; /* Анимация цвета фона */
+
+}
+
+.btn:hover {
+	background-color: #1c15e9; /* Цвет фона кнопки при наведении */
+  }
+.btn__main{
+	position: absolute;
+	width: 97%;
+    height: 66px;
+    left: 25px;
+    top: 32px;
+	
+}
+.lens{
+	width: 90%;
+}
+
+  
+
+.catalog{
+	max-width: 1820px;
+	max-height: 850px;	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.card__title{
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 23px !important; 
+line-height: 23px;
+display: flex;
+align-items: center;
+}
+.discription{
+	width: 100%;
+	display: flex;
+	align-items: center
+  }
+  .results{
+	width: 500px;
+	height: 500px;
+	background-color: aqua;
+  }
+
+.search-results{
+	display: flex;
+	flex-wrap: wrap;
+justify-content: center;
+}
+  .search-result {
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	width: 23%;
+	background-color: white;
+  }
+  .details {
+	margin: 10px;
+  }
+  
+  #pagination a {
+	display: flex;
+	margin: 0 5px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #333;
+  }
+  
+  #pagination a.active {
+	background-color: #333;
+	color: #fff;
+  }
+
+  #pagination {
+	display: flex;
+  }
+  .author,
+  .title {
+	cursor: pointer; /* Анимация цвета */
+  }
+  
+  .author:hover,
+  .title:hover {
+ /* Цвет при наведении */
+	text-decoration: underline;
+  }
+
+/* Стили для аватарки автора */
+.author img {
+
+	width: 65px; /* Размер аватарки */
+	height: 65px;
+	border-radius: 50%; /* Задаем радиус, чтобы аватарка была круглой */
+	object-fit: cover; /* Заполняем область аватарки, чтобы изображение не искажалось */
+	margin: 5px; /* Добавляем небольшой отступ справа от аватарки */
+	margin-left: 0px;
+  }
+  
+  .author {
+	display: flex; /* Делаем контейнер блочно-строчным элементом, чтобы аватарка и надпись были в одной строке */
+	align-items: center; /* Выравниваем элементы по вертикали */
+  }
+  
+  
+  .author-name {
+	font-weight: bold; /* Делаем текст надписи "Автор" жирным */
+  }
